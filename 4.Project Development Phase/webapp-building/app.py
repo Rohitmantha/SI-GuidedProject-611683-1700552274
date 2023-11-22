@@ -25,7 +25,7 @@ def submit():
     prediction = model.predict(data)
     prediction = int(prediction)
 
-    if prediction == 0:
+    if prediction == 1:
         return render_template("not_approved.html")
     else:
         return render_template("approved.html")
