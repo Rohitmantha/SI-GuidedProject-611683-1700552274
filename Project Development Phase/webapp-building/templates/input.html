@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            background-color: lightgreen;
+            flex-direction:column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h3 {
+            color: #333; /* Change this color to a suitable dark color */
+            text-align: center;
+        }
+
+        /* Style inputs with type="number", select elements, and textareas */
+        input[type=number],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Style the submit button */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Loan Approval Prediction Form</h3>
+
+        <form action='submit' method='post' class="form">
+          <label for="Gender">Gender</label>
+          <select id="Gender" name="Gender">
+            <option value=0>Male</option>
+            <option value=1>Female</option>
+          </select>
+          
+          <label for="Married">Married</label>
+          <select id="Married" name="Married">
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+          </select>
+          
+          
+          
+          <label for="Dependents">Dependents</label>
+          <input type="number" id="Dependents" min = 0 max = 10 name="Dependents" placeholder="No of Dependents on you......">
+          
+          
+          
+          <label for="Education">Education</label>
+          <select id="Education" name="Education">
+            <option value=1>Graduate</option>
+            <option value=0>Not Graduate </option>
+          </select>
+          
+           <label for="Self_Employed">Self Employed</label>
+          <select id="Self_Employed" name="Self_Employed">
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+          </select>
+          
+          <label for="ApplicantIncome">Applicant Income</label>
+          <input type="Number" min = 1000 id="ApplicantIncome" name="Applicant Income" placeholder="Your Income...">
+          
+          <label for="CoapplicantIncome">CO Applicant Income</label>
+          <input type="Number" min = 100 id="CoapplicantIncome" name="Co Applicant Income" placeholder="Your Co Applicant Income...">
+          
+          <label for="LoanAmount">Loan Amount</label>
+          <input type="Number" min = 0 id="LoanAmount" name="Loan Amount" placeholder="Enter the Loan Amount ...">
+          
+          <label for="Loan_Amount_Term">Loan Amount Term</label>
+          <input type="Number" min = 30 max = 15000 id="Loan_Amount_Term" name="Loan Amount Term" placeholder="Enter the Term Loan Amount in days ...">
+         
+          <label for="Credit_History">Credit History</label>
+          <input type="Number" min = 0 max = 5 id="Credit_History" name="Credit History" placeholder="Enter the Your Previous Credit History ...">
+          
+           <label for="Property_Area">Property Area</label>
+          <select id="Property_Area" name="Property Area">
+            <option value=2>Urban</option>
+            <option value=0>Rural</option>
+            <option value=1>Semi Urban</option>
+          </select>
+            <input type='submit' value='Submit'>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
