@@ -27,9 +27,9 @@ We will be using classification algorithms such as Decision tree, Random forest,
 
 ### Running the Web Interface
 
-1. Navigate to the `Web Interface` directory:
+1. Navigate to the `webapp-building` directory in the `Project Development Phase`.
 
-2. Run the Flask application: using simple line of code : python app.py
+2. Run the Flask application: using simple line of code : python app.py in the terminal at the same directory.
 
 The web interface will be accessible at [http://localhost:5000](http://localhost:5000) -> in your local host
 you can even access the web app on other devices on the same network with the actual Ip given below the local host.
